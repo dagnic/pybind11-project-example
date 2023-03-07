@@ -1,0 +1,15 @@
+[build-system]
+requires = ["scikit-build", "scikit_build_core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "scikit_build_example"
+version = "0.0.1"
+description="A minimal example package (with pybind11)"
+readme = "README.rst"
+authors = [
+  { name = "My Name", email = "me@email.com" },
+]
+packages = ["scikit_build_example"]
+package_dir = {"scikit_build_example" = "cpp_library_bindings"}
+requires-python = ">=3.7"
